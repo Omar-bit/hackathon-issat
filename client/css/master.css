@@ -1,21 +1,27 @@
+:root{
+    --primary: #de0d6f;
+    --bg: #f6f6f6;
+    --secondary:#D9D9D9;
+}
 body{
     background-color: #f6f6f6;
 }
 .a{
 
     display: flex;
-   
-    gap: 15px;
+    gap: 1px;
 }
 .k{
-    padding-right: 803px;
-    padding-left: 38px;
+    padding-right: 544px;
+    padding-left: 5px;
     font-size: 19px;
+    margin-top: 9px;
 }
 .a p{
     color: #de0d6f;
     font-family: Arial, Helvetica, sans-serif;
-    padding-top: 6px;
+    padding-top: 3px;
+    margin-left: 72px;
 }
 .ba{
     display: flex;
@@ -36,7 +42,7 @@ body{
     height: 181px;
     padding-left: 52px;
     padding-top: 101px;
-    margin-top: -26px;
+    margin-top: -22px;
 }
 .b h1{
     color: #de0d6f;
@@ -44,8 +50,9 @@ body{
     padding-top: 27px;
 }
 .ba p{
-    padding-left: 135px;
-    color: #de0d6f;
+    padding-left: 144px;
+    color: black;
+    margin-top: 1px;
 }
 .ba button{
     background-color: #de0d6f;
@@ -53,8 +60,14 @@ body{
     width: 88px;
     height: 106px;
     border-radius: 6px;
-    margin-top: -11px;
-    margin-left: 300px;
+    margin-top: -6px;
+    margin-left: 323px;
+    border: #de0d6f solid 2px;
+}
+.ba img{
+    width: 59px;
+    margin-top: -130px;
+    margin-left: -41px;
 }
 .m{
     display: flex;
@@ -63,16 +76,16 @@ body{
     border: #de0d6f solid 2px;
     width: 271px;
     height: 255px;
-    margin-top: 124px;
-    margin-left: 39px;
+    margin-top: 146px;
+    margin-left: 62px;
     padding-top: -14px;
     padding-left: 33px;
     border-radius: 8px;
 }
 .m img{
     width: 275px;
-    margin-top: 109px;
-    margin-left: 293px;
+    margin-top: 145px;
+    margin-left: 276px;
 }
 
 .ma p{
@@ -121,6 +134,7 @@ body{
     border-radius: 6px;
     margin-top: 25px;
     margin-left: 180px;
+    border: #de0d6f solid 2px;
 }
 .cl{
     display: flex;
@@ -141,5 +155,20 @@ body{
 }
 .cb{
     display: flex;
-    gap: 2px;
+    gap: 13px;
+    margin-top: -51px;
+    margin-left: 1350px;
+}
+.cb img{
+    width: 40px;
+    height: 40px;
+}
+button :hover{
+    cursor: pointer;
+}
+.lmp:hover{
+    cursor: pointer;
+} 
+.p:hover{
+    cursor: pointer;
 }
