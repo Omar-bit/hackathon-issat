@@ -10,32 +10,41 @@
         <header>
           <div class="a">
             <b><p class="k">Bour la forme</p></b>
-            <b><p class="p">Login/Signup</p></b>
-            <b><p class="p">Contact us</p></b>
-            <b><p class="p">About us</p></b>
+            <a href="signin.html" style="
+            color: white;
+            text-decoration: underline;
+        "><b><p class="p">Sign In/Sign Up</p></b></a>
+            <a href="#" id="linkToP1" style="
+            color: white;
+            text-decoration: underline;
+        "><b><p class="p">About Us</p></b></a>
+            <a href="#" id="linkToP2" style="
+            color: white;
+            text-decoration: underline;
+        "><b><p class="p">Contact Us</p></b></a>
           </div>
         </header>
         <div class="b">
           <div class="ba">
             <img class="mml" src="427092718_3226887767607373_3763103584231460545_n-removebg-preview.png" alt="">
             <h1>Bour_la_forme!</h1>
-            <p>Behold, within this digital realm lies a site of profound concern for your well-being. Supported by the formidable power of artificial intelligence, it delves deep to detect any sign of discomfort, all the while guiding students in the intricate art of time management
+            <p id="p1">Behold, within this digital realm lies a site of profound concern for your well-being. Supported by the formidable power of artificial intelligence, it delves deep to detect any sign of discomfort, all the while guiding students in the intricate art of time management
               .</p>
-            <button > <b>Get Started</b></button>
+            <button  id="redirectBtn" > <b>Get Started</b></button>
           </div>
           <img src="heart.svg" alt="heart">
         </div>
         <div class="m">
           <img src="undraw_medical_care_movn.svg" alt="tbiba">
-          <div class="ma">
-            <h2>contact</h2>
+          <div id="p2" class="ma">
+            <h2>Contact</h2>
             <label for="name"><b>Nom :</b></label>
             <input type="text" id="name" name="name" class="mm"><br>
             <label for="name"><b>Email :</b></label>
             <input type="email" id="name" name="name" class="kk"><br>
             <label for="name"><b>Message :</b></label>
             <input type="text" id="name" name="name" class="ll"><br>
-            <button class="lmp">envoyer</button>
+            <button id="changeTextBtn" class="lmp">Envoyer</button>
           </div>
         </div>
         <div class="c">
@@ -48,7 +57,52 @@
         <img src="download-removebg-preview (16).png" alt="instagram">
       <img src="download-removebg-preview (15).png" alt=""></div>
         </div>
+        <script>
+          // Add event listener to the link to focus on the text with id 'p1'
+          document.addEventListener("DOMContentLoaded", function() {
+            var linkToP1 = document.getElementById("linkToP1");
+            var p1 = document.getElementById("p1");
+      
+            if (linkToP1 && p1) {
+              linkToP1.addEventListener("click", function(event) {
+                event.preventDefault(); // Prevent default link behavior
+      
+                p1.focus(); // Focus on the paragraph element
+              });
+            }
+          });
+          document.addEventListener("DOMContentLoaded", function() {
+            var linkToP1 = document.getElementById("linkToP2");
+            var p1 = document.getElementById("p2");
+      
+            if (linkToP1 && p1) {
+              linkToP1.addEventListener("click", function(event) {
+                event.preventDefault(); // Prevent default link behavior
+      
+                p1.focus(); // Focus on the paragraph element
+              });
+            }
+          });
+        </script>
+          <script>
+            document.addEventListener("DOMContentLoaded", function() {
+              var changeTextBtn = document.getElementById("changeTextBtn");
+        
+              if (changeTextBtn) {
+                changeTextBtn.addEventListener("click", function() {
+                  changeTextBtn.textContent = "Envoyé!"; // Change button text
+                });
+              }
+            });
+            document.addEventListener("DOMContentLoaded", function() {
+      var redirectBtn = document.getElementById("redirectBtn");
 
-
+      if (redirectBtn) {
+        redirectBtn.addEventListener("click", function() {
+          window.location.href = "signup.html"; // Redirect to signi.html
+        });
+      }
+    });
+          </script>
   </body>
 </html>
