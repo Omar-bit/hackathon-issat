@@ -1,10 +1,14 @@
+:root{
+    --primary: #de0d6f;
+    --bg: #f6f6f6;
+    --secondary:#D9D9D9;
+}
 body{
     background-color: #f6f6f6;
 }
 .a{
 
     display: flex;
-   
     gap: 15px;
 }
 .k{
